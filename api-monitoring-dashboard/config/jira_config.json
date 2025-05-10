@@ -1,0 +1,11 @@
+{
+  "jira": {
+    "api_url": "https://your-domain.atlassian.net/rest/api/3",
+    "api_token": "your_api_token",
+    "email": "your_email@example.com",
+    "project_key": "YOUR_PROJECT_KEY",
+    "issue_type": "Task",
+    "default_summary": "API Monitoring Alert",
+    "default_description": "An issue was detected with the monitored API. Please check the logs for more details."
+  }
+}

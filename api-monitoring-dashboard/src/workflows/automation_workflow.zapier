@@ -1,0 +1,28 @@
+{
+  "name": "API Monitoring Workflow",
+  "description": "Automation workflow for monitoring API health and creating Jira tickets on failure.",
+  "version": "1.0",
+  "triggers": {
+    "api_failure": {
+      "type": "webhook",
+      "url": "https://your-webhook-url.com/api/failure",
+      "method": "POST"
+    }
+  },
+  "actions": {
+    "create_jira_ticket": {
+      "type": "jira",
+      "action": "create_ticket",
+      "project_key": "YOUR_PROJECT_KEY",
+      "summary": "API Failure Detected",
+      "description": "An issue was detected with the API. Please investigate.",
+      "issue_type": "Bug"
+    }
+  },
+  "workflow": [
+    {
+      "trigger": "api_failure",
+      "action": "create_jira_ticket"
+    }
+  ]
+}

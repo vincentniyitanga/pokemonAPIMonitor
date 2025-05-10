@@ -1,0 +1,20 @@
+{
+  "name": "api-monitoring-dashboard",
+  "version": "1.0.0",
+  "description": "A system that monitors the health of a public API, visualizes the data, and automatically creates tickets for issues.",
+  "main": "src/scripts/monitor_api.py",
+  "scripts": {
+    "monitor": "python src/scripts/monitor_api.py",
+    "parse-logs": "python src/scripts/log_parser.py"
+  },
+  "dependencies": {
+    "requests": "^2.26.0",
+    "flask": "^2.0.1",
+    "elasticsearch": "^7.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

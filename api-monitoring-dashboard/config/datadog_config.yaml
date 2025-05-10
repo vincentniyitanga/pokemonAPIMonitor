@@ -1,0 +1,9 @@
+api_key: YOUR_DATADOG_API_KEY
+app_key: YOUR_DATADOG_APP_KEY
+monitoring:
+  api_url: "https://api.example.com"  # Replace with the chosen public API URL
+  check_interval: 60  # Time in seconds between checks
+  alert_threshold: 5  # Number of failures before triggering an alert
+  tags:
+    - "environment:production"
+    - "service:api-monitoring"

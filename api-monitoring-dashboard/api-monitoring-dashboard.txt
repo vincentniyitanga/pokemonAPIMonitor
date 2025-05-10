@@ -1,0 +1,31 @@
+api-monitoring-dashboard
+├── src
+│   ├── scripts
+│   │   ├── monitor_api.py
+│   │   └── log_parser.py
+│   ├── workflows
+│   │   └── automation_workflow.zapier
+│   ├── dashboard
+│   │   └── dashboard_config.json
+│   └── utils
+│       └── error_handler.py
+├── config
+│   ├── datadog_config.yaml
+│   ├── kibana_config.json
+│   ├── jira_config.json
+│   └── config.env
+├── logs
+│   └── api_logs.txt
+├── postman
+│   ├── api_collection.json
+│   └── environment.json
+├── tests
+│   ├── test_monitor_api.py
+│   └── test_log_parser.py
+├── docs
+│   ├── datadog_dashboard_setup.md
+│   └── kibana_dashboard_setup.md
+├── package.json
+├── README.md
+├── requirements.txt
+└── .gitignore

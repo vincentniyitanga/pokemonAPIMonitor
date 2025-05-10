@@ -1,0 +1,36 @@
+{
+  "data_sources": {
+    "api": {
+      "url": "https://api.example.com", 
+      "method": "GET",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "logs": {
+      "path": "../logs/api_logs.txt"
+    }
+  },
+  "visualization_options": {
+    "uptime_percentage": {
+      "enabled": true,
+      "display_name": "API Uptime Percentage",
+      "chart_type": "line"
+    },
+    "response_times": {
+      "enabled": true,
+      "display_name": "API Response Times",
+      "chart_type": "bar"
+    },
+    "error_rates": {
+      "enabled": true,
+      "display_name": "API Error Rates",
+      "chart_type": "pie"
+    },
+    "jira_tickets": {
+      "enabled": true,
+      "display_name": "Open Jira Tickets",
+      "chart_type": "table"
+    }
+  }
+}
